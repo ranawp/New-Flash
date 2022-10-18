@@ -59,3 +59,24 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.removeItem('currentTheme');
     }
 })
+
+//slider
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevE1: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    breakpoints: {
+        700: {
+            slidesPerView: 2
+        },
+        1200: {
+            slidesPerView: 3
+        }
+    }
+}); 
